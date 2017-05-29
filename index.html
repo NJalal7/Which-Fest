@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Which Fest?</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/023b380c33.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<main>
+		<header>
+		<div class="fullscreen-overlay">
+			<div class="fullscreen-bg">
+				<video poster="assets/Cheer-up.jpg" autoplay loop height="100%" width="100%" class="fullscreen--bg__video">
+				  <source src="assets/cheer-up.mp4" type="video/mp4">
+				  <source src="assets/cheer-up.webm" type="video/webm">
+				  Your browser does not support the video element.
+				</video>
+			</div>
+		</div>
+		<h1>Which Fest?</h1>
+		<a href="#genre">
+			<div class="continue">
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</div>
+		</a>
+		</header>
+		<form action="" class="festForm">
+			<fieldset class="genre" id="genre">
+				<div class="wrapper">
+					<p>What are your favourite genres?</p>
+					<ul>
+						<li><input type="checkbox" name="genre" id="hipHop" value="hipHop">Hip Hop and R&B</li>
+						<li><input type="checkbox" name="genre" id="edm" value="edm">EDM</li>
+						<li><input type="checkbox" name="genre" id="indie" value="indie">Indie</li>
+						<li><input type="checkbox" name="genre" id="international" value="international">International</li>
+						<li><input type="checkbox" name="genre" id="jazz" value="jazzBlues">Jazz and Blues</li>
+					</ul>
+					<a href="#budget">
+						<div class="continue">
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
+			</fieldset>
+			<fieldset class="budget" id="budget">
+				<div class="wrapper">
+					<p>What's Your Budget?</p>
+					<ul>
+						<li><input type="radio" name="budget" id="low" value="$">$ (Less Than $100)</li>
+						<li><input type="radio" name="budget" id="high" value="$$">$$ (Over $100)</li>
+					</ul>
+					<!-- <a href="#festivalsResults"> -->
+						<!-- <div class="submit"> -->
+							<input type="submit" class="submit">
+						<!-- </div> -->
+					<!-- </a> -->
+				</div>
+			</fieldset>
+		</form>
+		<section class="festivalsResults" id="festivalsResults">
+		
+		</section>
+	</main>
+<script id="finalPageTemplate" type="x-handlebars-template">
+	<div class="wrapper">
+		<h1>{{name}}</h1>
+		<div class="youtube">
+			<iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p>{{description}}</p>
+		<a href="{{link}}">WEBSITE</a>
+	</div>
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+</body>
+</html>
+
+
+
+
